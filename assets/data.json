@@ -1,0 +1,23 @@
+[
+  {
+    "continent": "Ocenia",
+    "gdp" : 1600
+  },
+  {
+    "continent": "Africa",
+    "gdp" : 2490
+  },
+  {
+    "continent": "S America",
+    "gdp" : 2900
+  },
+  {
+    "continent":"Europe",
+    "gdp" : 23050
+  },
+  {
+    "continent":"India",
+    "gdp": 10000
+  }
+
+]

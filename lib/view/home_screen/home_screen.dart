@@ -7,6 +7,7 @@ import 'package:flutter/services.dart';
 import 'package:basics_firebase/bar%20graph/bar_graph.dart';
 
 import '../../core/constant/app_route.dart';
+import '../../piechart.dart';
 
 class HomeScreen extends StatefulWidget {
   HomeScreen({super.key});
@@ -161,7 +162,17 @@ class _MyHomePageState extends State<MyHomePage> {
                   SizedBox(
                       height:65,
                       width:double.infinity),
-                  graph(),
+                  Container(
+                    height: 300,
+                    child: ListView(
+
+                      scrollDirection: Axis.horizontal,
+                      children:[
+                        Piechart(),
+                        graph(),
+                      ]
+                    ),
+                  ),
                   GridView.count(
                     shrinkWrap: true,
                     physics: const NeverScrollableScrollPhysics(),
